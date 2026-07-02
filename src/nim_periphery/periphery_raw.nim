@@ -2,12 +2,12 @@ import std/os
 
 import todo
 
-const c_periphery = "c_periphery"
+const c_periphery = "c_periphery/src"
 #proc `/`(a: string, b: string): string = a & "/" & b   # this functionality already exists
 
 # --- Compilation config ---
 # 1. Flag to include the headers path
-{.passC: "-I" & currentSourcePath().parentDir() / c_periphery.}
+{.passC: "-I" & currentSourcePath().parentDir().}
 
 # 2. Flag for c-periphery to use the modern hardware driver (cdev)
 {.passC: "-DPERIPHERY_GPIO_CDEV_SUPPORT=1".}
