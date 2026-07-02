@@ -2,7 +2,7 @@ import std/os
 
 import todo
 
-const c_periphery = "c_periphery/src"
+const c_periphery = "c-periphery/src"
 #proc `/`(a: string, b: string): string = a & "/" & b   # this functionality already exists
 
 # --- Compilation config ---
