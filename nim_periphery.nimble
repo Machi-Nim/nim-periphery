@@ -8,5 +8,6 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 2.2.8"
+requires "nim >= 2.2.8 & < 3.0.0"
+#requires "c2nim >= 0.9.19 & < 1.0.0"
 requires "https://github.com/Machi-Nim/todo >= 0.1.1"
